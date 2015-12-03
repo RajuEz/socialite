@@ -98,4 +98,15 @@ class GoogleProvider extends AbstractProvider implements ProviderInterface
             'email' => $user['emails'][0]['value'], 'avatar' => array_get($user, 'image')['url'],
         ]);
     }
+
+    /**
+     * Set the custom parameters of the request.
+     *
+     * @param  string  $token
+     * @return array
+     */
+    public function tokenUser($token)
+    {
+        $this->getUserByToken($token);
+    }
 }

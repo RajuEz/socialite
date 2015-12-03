@@ -92,4 +92,15 @@ class LinkedInProvider extends AbstractProvider implements ProviderInterface
 
         return $this;
     }
+
+    /**
+     * Set the custom parameters of the request.
+     *
+     * @param  string  $token
+     * @return array
+     */
+    public function tokenUser($token)
+    {
+        $this->getUserByToken($token);
+    }
 }

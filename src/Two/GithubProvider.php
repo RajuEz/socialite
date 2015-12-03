@@ -98,4 +98,15 @@ class GithubProvider extends AbstractProvider implements ProviderInterface
             ],
         ];
     }
+
+    /**
+     * Set the custom parameters of the request.
+     *
+     * @param  string  $token
+     * @return array
+     */
+    public function tokenUser($token)
+    {
+        $this->getUserByToken($token);
+    }
 }

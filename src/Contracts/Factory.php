@@ -4,6 +4,7 @@ namespace Laravel\Socialite\Contracts;
 
 interface Factory
 {
+    //test
     /**
      * Get an OAuth provider implementation.
      *
